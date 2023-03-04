@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <body>
+        <script>
+            
+            var palavra = prompt("Insira uma palavra:");
+            var palavraInvertida = '';
+
+            while(palavra.length === 0){
+                alert("Palavra invalida!");
+                palavra = prompt("Insira uma palavra:");
+            }
+            
+            var i;
+
+            for(i = palavra.length; i>=0; i--){
+                palavraInvertida = palavraInvertida + palavra.charAt(i);
+            }
+
+            alert("A palavra invertida fica assim: " + palavraInvertida);
+            
+        </script>
+    </body>
+</html>
